@@ -17,7 +17,7 @@ public class OrderController {
     @Resource
     public RestTemplate restTemplate;
 
-    private static final String PAYMENT_URL = "http://cloud-payment-service";
+    private static final String PAYMENT_URL = "http://cloud-provider-payment";
 
     @PostMapping(value = "/consumer/payment/create")
     public CommonResult<Payment> create(Payment payment) {

@@ -56,7 +56,7 @@ public class PaymentCtrl {
         for (String ele : service) {
             log.info("element : {}", ele);
         }
-        List<ServiceInstance> instances = discoveryClient.getInstances("cloud-payment-service");
+        List<ServiceInstance> instances = discoveryClient.getInstances("cloud-provider-payment");
         for (ServiceInstance instance : instances) {
             log.info("instance serviceId: {},instance host:{} instance port:{} instance uri:{}", instance.getInstanceId(), instance.getHost(), instance.getPort(), instance.getUri());
         }
