@@ -63,4 +63,9 @@ public class PaymentCtrl {
         }
         return discoveryClient;
     }
+
+    @GetMapping(value = "/payment/lb")
+    public String getPaymentLb() {
+        return serverPort;
+    }
 }
