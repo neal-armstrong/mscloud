@@ -8,6 +8,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 @EnableDiscoveryClient
 public class NacosProviderMain9002 {
     public static void main(String[] args) {
+        System.out.println("just  test git rebase");
         SpringApplication.run(NacosProviderMain9002.class, args);
     }
 }
